@@ -1,19 +1,87 @@
 <style>
-.navbar{
-    height:70px;
-    background:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:0 20px;
-    box-shadow:0 2px 5px rgba(0,0,0,.1);
+.navbar {
+    height: 70px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.navbar h3 {
+    font-size: 18px;
+    color: #1e293b;
+    margin: 0;
+    font-weight: 600;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-date {
+    font-size: 13px;
+    color: #64748b;
+    background: #f8fafc;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
+
+.notification-icon {
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 1px solid #e2e8f0;
+    padding-left: 20px;
+}
+
+.profile img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info .name {
+    font-size: 13px;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+.profile-info .role {
+    font-size: 11px;
+    color: #64748b;
 }
 </style>
 
 <div class="navbar">
+    <h3>Dashboard Admin</h3>
+    
+    <div class="nav-right">
+        <div class="nav-date">
+            📅 August 5, 2026
+        </div>
+        
+        <div class="notification-icon" title="Pemberitahuan">
+            🔔
+        </div>
 
-<h3>Dashboard Admin</h3>
-
-<p>Halo Admin 👋</p>
-
+        <div class="profile">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100" alt="Avatar Admin">
+            <div class="profile-info">
+                <div class="name">Koyinsola Adeyemi</div>
+                <div class="role">Head Admin</div>
+            </div>
+        </div>
+    </div>
 </div>
