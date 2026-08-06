@@ -130,22 +130,31 @@ img.thumbnail {
 
 .pages {
     display: flex;
-    gap: 4px;
+    align-items: center;
+    gap: 8px;
 }
 
 .pages button {
-    background: #f1f5f9;
-    border: 1px solid #e2e8f0;
-    padding: 6px 12px;
-    border-radius: 4px;
+    width: 38px;
+    height: 38px;
+    border: 1px solid #dbe3ef;
+    background: #f8fafc;
+    color: #64748b;
+    border-radius: 6px;
     cursor: pointer;
-    color: #334155;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.pages button:hover {
+    background: #e2e8f0;
 }
 
 .pages button.active {
     background: #2563eb;
     color: white;
-    border-color: #2563eb;
+    border: 1px solid #2563eb;
 }
 </style>
 
@@ -153,7 +162,7 @@ img.thumbnail {
     <div class="header-title">Daftar Posting Website</div>
 
     <div>
-        <a href="#" class="btn-tambah">Tambah Artikel/Berita</a>
+        <a href="/admin/tambah-artikel" class="btn-tambah">Tambah Artikel/Berita</a>
     </div>
 
     <div class="table-controls">
@@ -221,14 +230,15 @@ img.thumbnail {
     </table>
 
     <div class="pagination-footer">
-        <div>Showing 1 to 2 of 30 entries</div>
-        <div class="pages">
-            <button>&lt;</button>
-            <button class="active">1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>&gt;</button>
-        </div>
+    <div>Showing 1 to 2 of 30 entries</div>
+
+    <div class="pages">
+        <button>&lt;</button>
+        <button class="active">1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>&gt;</button>
     </div>
+</div>
 </div>
